@@ -1,2 +1,5 @@
+read -p "Enter service name: " servicename
 service --status-all
-service apache status
+service $servicename status
+systemctl show $servicename
+systemctl show -p MainPID --value $servicename
