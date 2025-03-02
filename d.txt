@@ -1,0 +1,4 @@
+users=("Joe" "John" "Gray" "Tet")
+psw=("123" "234" "345" "456")
+emails=("joe@g.com" "john@g.com" "gray.com" "tet.com")
+2022-04-23
