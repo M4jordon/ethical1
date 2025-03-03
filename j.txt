@@ -1,0 +1,26 @@
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-03-03 06:51 EST
+Nmap scan report for withjoy.com (108.139.200.119)
+Host is up (0.056s latency).
+Other addresses for withjoy.com (not scanned): 108.139.200.86 108.139.200.33 108.139.200.55
+rDNS record for 108.139.200.119: server-108-139-200-119.los50.r.cloudfront.net
+Not shown: 999 filtered tcp ports (no-response)
+PORT    STATE SERVICE  VERSION
+443/tcp open  ssl/http Amazon CloudFront httpd
+|_http-server-header: CloudFront
+|_http-title: ERROR: The request could not be satisfied
+| ssl-cert: Subject: commonName=*.withjoy.com
+| Subject Alternative Name: DNS:*.withjoy.com, DNS:withjoy.com
+| Not valid before: 2024-07-24T00:00:00
+|_Not valid after:  2025-08-22T23:59:59
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: OneAccess 1641 router (91%), Motorola SURFboard SB3100 cable modem (VxWorks 5.3) (88%), Motorola SURFboard SB5100i cable modem (87%), Panasonic KX-HCM270 Network Camera or Symbol Spectrum24 4131 WAP (87%), Blue Coat PacketShaper appliance (87%), Linksys BEFSR41 EtherFast router (87%), Polycom MGC-25 videoconferencing system (pSOS 1.0.4) (85%), Wyse ThinOS 5.2 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT     ADDRESS
+1   2.42 ms 10.0.2.2
+2   2.51 ms server-108-139-200-119.los50.r.cloudfront.net (108.139.200.119)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 86.88 seconds
