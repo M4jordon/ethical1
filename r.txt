@@ -1,14 +1,17 @@
-Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-03-05 09:07 EST
-Nmap scan report for alphamorgan.com (104.21.78.39)
-Host is up (0.00053s latency).
-Other addresses for alphamorgan.com (not scanned): 172.67.215.189 2606:4700:3035::ac43:d7bd 2606:4700:3034::6815:4e27
-Not shown: 46564 filtered tcp ports (net-unreach), 18965 filtered tcp ports (no-response)
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-03-07 21:58 EST
+Nmap scan report for alphamorgan.com (172.67.215.189)
+Host is up (0.00067s latency).
+Other addresses for alphamorgan.com (not scanned): 104.21.78.39 2606:4700:3034::6815:4e27 2606:4700:3035::ac43:d7bd
+Not shown: 50247 filtered tcp ports (net-unreach), 15280 filtered tcp ports (no-response)
 PORT     STATE SERVICE    VERSION
 21/tcp   open  tcpwrapped
 80/tcp   open  tcpwrapped
 443/tcp  open  tcpwrapped
-2053/tcp open  tcpwrapped
-2086/tcp open  tcpwrapped
+587/tcp  open  tcpwrapped
+|_smtp-commands: Couldn't establish connection on port 587
+2052/tcp open  tcpwrapped
+2083/tcp open  tcpwrapped
+2096/tcp open  tcpwrapped
 8080/tcp open  tcpwrapped
 Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
 Device type: phone|switch|VoIP adapter|bridge|general purpose
@@ -17,38 +20,38 @@ OS CPE: cpe:/o:nokia:symbian_os cpe:/h:cisco:catalyst_1900 cpe:/h:cisco:ata_188_
 Aggressive OS guesses: Nokia 3600i mobile phone (90%), Cisco Catalyst 1900 switch (87%), Cisco ATA 188 VoIP adapter (85%), Oracle Virtualbox (85%), QEMU user mode network gateway (85%)
 No exact OS matches for host (test conditions non-ideal).
 
-TRACEROUTE (using port 21/tcp)
-HOP RTT     ADDRESS
-1   0.18 ms 10.0.2.2
-2   0.20 ms 10.0.2.2
-3   0.74 ms 10.0.2.2
-4   0.30 ms 10.0.2.2
-5   0.73 ms 10.0.2.2
-6   0.56 ms 10.0.2.2
-7   2.05 ms 10.0.2.2
-8   0.24 ms 10.0.2.2
-9   0.20 ms 10.0.2.2
-10  0.49 ms 10.0.2.2
-11  0.92 ms 10.0.2.2
-12  0.37 ms 10.0.2.2
-13  0.42 ms 10.0.2.2
-14  1.29 ms 10.0.2.2
-15  0.48 ms 10.0.2.2
-16  0.24 ms 10.0.2.2
-17  0.19 ms 10.0.2.2
-18  0.18 ms 10.0.2.2
-19  0.19 ms 10.0.2.2
-20  0.41 ms 10.0.2.2
-21  1.02 ms 10.0.2.2
-22  0.76 ms 10.0.2.2
-23  0.18 ms 10.0.2.2
-24  0.47 ms 10.0.2.2
-25  0.24 ms 10.0.2.2
-26  0.90 ms 10.0.2.2
-27  0.18 ms 10.0.2.2
-28  0.18 ms 10.0.2.2
-29  0.17 ms 10.0.2.2
-30  0.17 ms 10.0.2.2
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+1   0.33 ms  10.0.2.2
+2   0.33 ms  10.0.2.2
+3   0.50 ms  10.0.2.2
+4   1.71 ms  10.0.2.2
+5   0.35 ms  10.0.2.2
+6   0.34 ms  10.0.2.2
+7   0.26 ms  10.0.2.2
+8   0.28 ms  10.0.2.2
+9   0.25 ms  10.0.2.2
+10  0.61 ms  10.0.2.2
+11  0.76 ms  10.0.2.2
+12  0.25 ms  10.0.2.2
+13  0.73 ms  10.0.2.2
+14  2.53 ms  10.0.2.2
+15  18.64 ms 10.0.2.2
+16  17.88 ms 10.0.2.2
+17  16.54 ms 10.0.2.2
+18  0.84 ms  10.0.2.2
+19  0.41 ms  10.0.2.2
+20  3.80 ms  10.0.2.2
+21  1.87 ms  10.0.2.2
+22  1.04 ms  10.0.2.2
+23  1.78 ms  10.0.2.2
+24  1.20 ms  10.0.2.2
+25  4.47 ms  10.0.2.2
+26  0.63 ms  10.0.2.2
+27  0.57 ms  10.0.2.2
+28  0.25 ms  10.0.2.2
+29  1.10 ms  10.0.2.2
+30  1.85 ms  10.0.2.2
 
 OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 83926.75 seconds
+Nmap done: 1 IP address (1 host up) scanned in 25187.99 seconds
