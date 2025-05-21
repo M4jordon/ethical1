@@ -22,7 +22,7 @@ app.get("/cpanel",(req,res,next)=>{
 	res.send("<h1>C panel</h1><p>Unauthorized access</p>")
 })
 
-app.use("*",(req,res)=>{
+app.get("/",(req,res)=>{
 	res.send("<h1>404 Not found</h1>")
 })
 
