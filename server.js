@@ -8,7 +8,7 @@ app.use((req,res,next)=>{
 	const ip =req.headers["x-forwarded-for"] ||req.connection.remoteAddress;
 	const path = req.originalUrl;
 	console.log( '{new Date().toISOString()}-{ip} access ${path}\n');
-	fs.appenFileSync(logFile,log);
+	fs.appendFileSync("log.txt",log);
 	next();
 })
 
